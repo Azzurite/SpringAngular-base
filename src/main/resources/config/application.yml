@@ -1,0 +1,17 @@
+flyway:
+    locations:
+        classpath:db/schema
+
+dozer:
+    configuration:
+        classpath:config/dozer/mapping.xml
+
+
+spring:
+    jpa:
+        hibernate:
+            ddl-auto:
+                none
+            format_sql:
+                true
+

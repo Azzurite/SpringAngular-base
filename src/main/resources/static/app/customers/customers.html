@@ -1,0 +1,27 @@
+<div class="row">
+	<div class="col-md-12">
+		<h1>Customer list</h1>
+
+		<form ng-submit="createCustomer(newCustomer);">
+
+			<div class="input-group">
+				<input class="form-control" type="text" ng-model="newCustomer.uniqueName" placeholder="Unique name" />
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="submit">Add customer</button>
+				</span>
+			</div>
+
+		</form>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<ul>
+			<li ng-repeat="customer in customers">
+				{{ customer.uniqueName }}
+				<button class="btn btn-primary" type="button" ng-click="deleteCustomer(customer);">Delete</button>
+			</li>
+		</ul>
+	</div>
+</div>

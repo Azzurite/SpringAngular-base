@@ -1,0 +1,20 @@
+// bower:scss
+@import "../static/bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "theme";
+@import "base";
+
+body {
+	color: $font-color;
+}
+
+.container {
+	background-color: $main-background-color;
+}
+
+.cartman {
+	background-image: url($imagePath + "cartman.gif");
+	height: 308px;
+	width: 338px;
+	float: left;
+}
